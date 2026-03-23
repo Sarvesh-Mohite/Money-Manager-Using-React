@@ -1,3 +1,53 @@
+# Money Manager 💰
+
+A dynamic React application designed to help users track their financial health by managing daily transactions. Users can record income and expenses, view their current balance in real-time, and manage their transaction history.
+
+## 🚀 Features
+* **Real-time Calculations:** Automatically updates Total Balance, Total Income, and Total Expenses as transactions are added or removed.
+* **Transaction Management:** Add new transactions with a title, amount, and category (Income/Expenses).
+* **History Logs:** Displays a chronological list of all transactions in a clean table format.
+* **Delete Functionality:** Easily remove incorrect or old entries to keep the balance accurate.
+* **Responsive Design:** Optimized for both desktop and mobile viewing.
+
+## 🛠️ Tech Stack
+* **Frontend:** React.js
+* **Styling:** CSS3 (Flexbox/Grid)
+* **Unique IDs:** `uuid` library for managing transaction keys.
+* **State Management:** React Class Components and Lifecycle methods.
+
+## 📸 Screenshots
+*(Optional: You can add an image link here after you host your project)*
+`![App Screenshot](your-image-link-here)`
+
+## 💡 How it Works
+1.  **State Logic:** The application maintains a `transactionsList` in the parent `MoneyManager` component.
+2.  **Calculations:** * **Income:** Sum of all transactions where type is "Income".
+    * **Expenses:** Sum of all transactions where type is "Expenses".
+    * **Balance:** $Income - Expenses$.
+3.  **Components:**
+    * `MoneyDetails`: Displays the summary cards.
+    * `TransactionItem`: Handles individual row logic and the delete trigger.
+
+## 🏗️ Installation & Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/money-manager.git
+   ```
+2. Install uuid:
+   ```bash
+   npm install uuid
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
